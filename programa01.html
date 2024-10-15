@@ -8,28 +8,35 @@
 <body>
     <script>
 
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
 let ano = 2024
 const minhaIdade = ano - 2008
 const maeIdade = ano - 1979
 const paiIdade = ano - 1969
 
-        document.write(`Oi, meu nome é Laiane e tenho ${minhaIdade}  anos` )
-        pulalinha()
-        document.write(`Oi, o nome da minha mãe é Zeloir e ela tem ${maeIdade} anos`)
-        pulalinha()
-        document.write(`Oi, o nome do meu pai é Leo e ele tem ${paiIdade} anos`)
-        pulalinha()
-        pulalinha()
-        
-ano = 2030
+       mostrar(`Oi, meu nome é Laiane e tenho ${minhaIdade}  anos` )
+       mostrar(`Oi, o nome da minha mãe é Zeloir e ela tem ${maeIdade} anos`)
+       mostrar(`Oi, o nome do meu pai é Leo e ele tem ${paiIdade} anos`)
+       pulaLinha()
 
-document.write('Em 2030 minha família terá: ' + '<br><br>')
-document.write(`Eu terei ${ano - 2008} anos <br>`)
-document.write(`Minha mãe terá ${ano - 1979} anos <br>`)
-document.write(`Meu pai terá ${ano - 1969} anos <br>`)
+       let media = (minhaIdade + maeIdade + paiIdade)/3
+       mostrar(` A média das idades da minha família é : ${media}`)
+       pulaLinha()  
+       ano = 2030
 
-let media = (minhaIdade + maeIdade + paiIdade)/3
-document.write(` A média das idades da minha família é : ${media} <br>`)
+mostrar('Em 2030 minha família terá: ')
+mostrar(`Eu terei ${ano - 2008} anos`)
+mostrar(`Minha mãe terá ${ano - 1979} anos`)
+mostrar(`Meu pai terá ${ano - 1969} anos`)
+
 
     </script>
     
