@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> materia </title>
+</head>
+<body>
+    <script>
+       
+       function pulaLinha(){
+        document.write('<br>')
+       }
+
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+        
+        let materia = prompt('Qual diciplina você quer saber a média?')
+
+        let trimestres = prompt(`Quantos trimentres você ja fez de ${materia} ?`)
+
+        let totalNota = 0 
+
+        for(let i = 1; i <= trimestres; i++){
+            let nota = prompt(`Qual sua nota no ${i} 1º Trimentre`)
+            totalNota = totalNota + nota
+        }
+
+        let media = totalNota/trimestres
+    
+        mostrar(`Sua média até o momento é: ${media}`)
+
+    </script>
+</body>
+</html>
