@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--fonte-titulo:"DynaPuff", system-ui;
+--fonte-texto:"Playwrite GB S", cursive;
+
+--rosa: #ff99c8ff;
+--amarelo: #fcf6bdff;
+--verde: #d0f4deff;
+--azul: #a9def9ff;
+--lilas: #e4c1f9ff;
+--brando: #ffffffff;
+--preto: #0a0908ff;
+}
+
+body{
+    background-color: var(--lilas);
+    font-family: var(--fonte-texto);
+}
+header{
+    background-color: var(--rosa);
+    text-align: center;
+    padding: 2em;
+    color: var(--preto);
+}
+header h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+}
+.projetos{
+    padding: 2em;
+    display: flex;
+}
